@@ -18,7 +18,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Image
-        run: docker build -t your-dockerhub-username/devops-demo -f docker/Dockerfile . 
+        run: docker build -t jrishi904/devops-demo -f docker/Dockerfile . 
         
       - name: Push Image
         run: docker push jrishi904/devops-demo:latest
